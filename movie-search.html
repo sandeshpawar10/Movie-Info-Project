@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="movie-search.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <h1 id="ws">Movie Info Spot</h1>
+        </div>
+        <div class="input-section">
+            <label for="test">Enter Movie Name: </label>
+            <input type="text" id="text"></input>
+            <input type="text" id="year" placeholder="Enter year (optional)">
+            <select name="movietype" id="options">
+                <option value="None">Select Type</option>
+                <option value="hollywood">Hollywood</option>
+                <option value="bollywood">Bollywood</option>
+            </select>
+            <button id="searchbtn">Search</button>
+        </div>
+        <div class="movie-info">
+            <div class="poster-container">
+                <img class="poster" alt="MoviePoster">
+            </div>
+            <div class="information">
+                <p id="title"><b>Title:</b> </p>
+                <p id="overview"><b>Description:</b> </p>
+                <p id="releasedate"><b>Release Date:</b> </p>
+                <p id="director"><b>Director:</b> </p>
+                <p id="cast"><b>Casts:</b> </p>
+                <!-- <p id="mc">Main actor: </p>
+                <p id="mcsr">Main actress: </p> -->
+                <p id="rating"><b>IMDB:</b> </p>
+                
+            </div>
+        </div>
+    </div>
+    <script src="movie-search.js"></script>
+</body>
+</html>
